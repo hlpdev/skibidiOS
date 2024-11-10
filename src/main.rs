@@ -7,8 +7,7 @@ mod io;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    io::vga_buffer::print_something();
-
+    println!("Hello world! Numbers: {}", 5);
     loop {}
 }
 
